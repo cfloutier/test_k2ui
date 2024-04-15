@@ -1,0 +1,30 @@
+{
+  "spec": "2.0",
+  "mod_id": "test_k2ui",
+  "author": "cfloutier",
+  "name": "Test K2UI",
+  "description": "test K2UI controls",
+  "source": "https://github.com/cfloutier/test_k2ui",
+  "version": "1.0.0",
+  "version_check": "",
+  "ksp2_version": {
+    "min": "0.2.1",
+    "max": "*"
+  },
+  "dependencies": [
+    {
+      "id": "com.github.x606.spacewarp",
+      "version": {
+        "min": "1.9.0",
+        "max": "*"
+      }
+    },
+    {
+      "id": "UitkForKsp2",
+      "version": {
+        "min": "2.4.2",
+        "max": "*"
+      }
+    }
+  ]
+}

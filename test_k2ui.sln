@@ -1,0 +1,34 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{65627A96-BD9C-4514-8F43-D94AC9F7E716}") = "test_k2ui", "src/test_k2ui/test_k2ui.csproj", "{FC0231AE-A02F-4D97-89F9-388833F36494}"
+EndProject
+Project("{65627A96-BD9C-4514-8F43-D94AC9F7E716}") = "test_k2ui.Unity", "src/test_k2ui.Unity/test_k2ui.Unity.csproj", "{505E2C4B-3888-403D-B7F4-CA4668C8B9F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Deploy|Any CPU = Deploy|Any CPU
+		DeployAndRun|Any CPU = DeployAndRun|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC0231AE-A02F-4D97-89F9-388833F36494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC0231AE-A02F-4D97-89F9-388833F36494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC0231AE-A02F-4D97-89F9-388833F36494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC0231AE-A02F-4D97-89F9-388833F36494}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC0231AE-A02F-4D97-89F9-388833F36494}.Deploy|Any CPU.ActiveCfg = Deploy|Any CPU
+		{FC0231AE-A02F-4D97-89F9-388833F36494}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
+		{FC0231AE-A02F-4D97-89F9-388833F36494}.DeployAndRun|Any CPU.ActiveCfg = DeployAndRun|Any CPU
+		{FC0231AE-A02F-4D97-89F9-388833F36494}.DeployAndRun|Any CPU.Build.0 = DeployAndRun|Any CPU
+		{505E2C4B-3888-403D-B7F4-CA4668C8B9F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{505E2C4B-3888-403D-B7F4-CA4668C8B9F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{505E2C4B-3888-403D-B7F4-CA4668C8B9F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{505E2C4B-3888-403D-B7F4-CA4668C8B9F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{505E2C4B-3888-403D-B7F4-CA4668C8B9F9}.Deploy|Any CPU.ActiveCfg = Deploy|Any CPU
+		{505E2C4B-3888-403D-B7F4-CA4668C8B9F9}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
+		{505E2C4B-3888-403D-B7F4-CA4668C8B9F9}.DeployAndRun|Any CPU.ActiveCfg = DeployAndRun|Any CPU
+		{505E2C4B-3888-403D-B7F4-CA4668C8B9F9}.DeployAndRun|Any CPU.Build.0 = DeployAndRun|Any CPU
+	EndGlobalSection
+EndGlobal
+
+

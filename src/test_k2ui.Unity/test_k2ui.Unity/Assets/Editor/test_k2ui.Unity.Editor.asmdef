@@ -1,0 +1,14 @@
+{
+    "name": "test_k2ui.Unity.Editor",
+    "rootNamespace": "test_k2ui.Unity.Editor",
+    "references": [],
+    "includePlatforms": ["Editor"],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
