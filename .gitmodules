@@ -1,0 +1,3 @@
+[submodule "src/test_k2ui.Unity/test_k2ui.Unity/Assets/Runtime/K2UI"]
+	path = src/test_k2ui.Unity/test_k2ui.Unity/Assets/Runtime/K2UI
+	url = https://github.com/cfloutier/K2UI.git
