@@ -1,5 +1,4 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/MyFirstWindow/MyFirstWindow.uss?fileID=7433441132597879392&amp;guid=f49119c0dc6aec7469a0374f7f606ceb&amp;type=3#MyFirstWindow" />
     <Style src="project://database/Assets/Runtime/K2UI/Runtime/Controls/USS/K2UI.uss?fileID=7433441132597879392&amp;guid=d70a8288b6b3eee4a900aa2727eb7499&amp;type=3#K2UI" />
     <Style src="project://database/Assets/Runtime/K2UI/Runtime/Controls/USS/ToggleButton.uss?fileID=7433441132597879392&amp;guid=1b6a73cd9e0a617469e5d501d696c7be&amp;type=3#ToggleButton" />
     <Style src="project://database/Assets/Runtime/K2UI/Runtime/Controls/USS/K2Toggle.uss?fileID=7433441132597879392&amp;guid=a6dc5024ba8ad204e9099eca78c0703f&amp;type=3#K2Toggle" />
@@ -7,14 +6,14 @@
     <Style src="project://database/Assets/Runtime/K2UI/Runtime/Controls/USS/K2Tabs.uss?fileID=7433441132597879392&amp;guid=51945eb7b64f1ab4986c6d98dc37254e&amp;type=3#K2Tabs" />
     <Style src="project://database/Assets/Runtime/K2UI/Runtime/Controls/USS/compas.uss?fileID=7433441132597879392&amp;guid=e2bd53ecacfb99a4f9c9d2b73a0b1303&amp;type=3#compas" />
     <ui:VisualElement name="MainFrame" class="main-frame" style="position: absolute; left: 11px; top: 36px;">
-        <ui:VisualElement name="title-bar" style="margin-bottom: 0; margin-top: -10px; background-color: rgba(76, 79, 188, 0.23); border-top-left-radius: 12px; border-bottom-left-radius: 0; border-top-right-radius: 12px; border-bottom-right-radius: 0; margin-right: -10px; margin-left: -10px; border-left-color: rgb(76, 79, 188); border-right-color: rgb(76, 79, 188); border-top-color: rgb(76, 79, 188); border-bottom-color: rgb(76, 79, 188);">
-            <ui:VisualElement name="Main_Icon" style="width: 40px; height: 30px; top: -23px; left: 14px; background-image: url(&apos;project://database/Assets/Runtime/K2UI/Assets/Images/K2D2_WindowIcon.png?fileID=2800000&amp;guid=6a5fd6f51e722db49a3b2c207a7e7a73&amp;type=3#K2D2_WindowIcon&apos;);" />
-            <ui:Label text="K2-D2" style="-unity-font-definition: url(&apos;project://database/Assets/Fonts/Caravan.asset?fileID=11400000&amp;guid=9e9be541f4b684c4eb71cf35fcc59555&amp;type=2#Caravan&apos;); font-size: 21px; margin-left: 8px; flex-grow: 1;" />
+        <ui:VisualElement class="title-bar" style="margin-bottom: 0; margin-top: 0; border-top-left-radius: 12px; border-bottom-left-radius: 0; border-top-right-radius: 12px; border-bottom-right-radius: 0; margin-right: 0; margin-left: 0; border-left-color: rgb(76, 79, 188); border-right-color: rgb(76, 79, 188); border-top-color: rgb(76, 79, 188); border-bottom-color: rgb(76, 79, 188);">
+            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" style="-unity-font-definition: url(&apos;project://database/Assets/Runtime/K2UI/Runtime/Controls/USS/Fonts/ArialRounded.asset?fileID=11400000&amp;guid=7a6947395299c6045a727a85a9fc20f9&amp;type=2#ArialRounded&apos;); -unity-slice-left: 1;" />
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
             <K2UI.ToggleButton label=" " name="settings-toggle" value="false" class="mini-toggle" style="margin-right: 4px;">
-                <ui:VisualElement name="icon" style="top: 1px; left: 1px;" />
+                <ui:VisualElement name="icon" style="top: 1px; left: 1px; background-image: url(&apos;project://database/Assets/Runtime/K2UI/Runtime/Controls/USS/Images/gear.png?fileID=2800000&amp;guid=bd484c54c438af246961db5758fe20b6&amp;type=3#gear&apos;);" />
             </K2UI.ToggleButton>
             <ui:Button name="close-button" style="width: 20px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
-                <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); position: absolute; left: 2px; top: 2px; right: 2px; bottom: 2px; background-image: url(&apos;project://database/Assets/Runtime/K2UI/Assets/Images/Cross.png?fileID=2800000&amp;guid=127360a988ef02049b56bbbf3e73368b&amp;type=3#Cross&apos;);" />
+                <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); position: absolute; left: 2px; top: 2px; right: 2px; bottom: 2px; background-image: url(&apos;project://database/Assets/Runtime/K2UI/Runtime/Controls/USS/Images/Cross.png?fileID=2800000&amp;guid=127360a988ef02049b56bbbf3e73368b&amp;type=3#Cross&apos;);" />
             </ui:Button>
         </ui:VisualElement>
         <K2UI.Tabs.TabbedPage selected-tab-Name="controls" style="margin-top: 4px;">
@@ -24,10 +23,11 @@
                         <ui:Foldout text="Progress &amp; Compas" value="true">
                             <ui:IntegerField label="Integer Field" value="42" />
                             <ui:FloatField label="Float Field" value="42,2" />
-                            <K2UI.K2ProgressBar name="MyBar" />
-                            <K2UI.K2Slider name="MySlider" label-on-top="false" />
+                            <K2UI.K2ProgressBar name="MyBar" max="360" />
+                            <K2UI.K2Slider name="MySlider" label-on-top="false" max="360" />
                             <K2UI.K2Compass />
-                            <K2UI.K2ProgressBar name="CenterBar" centered="false" label="Centered " set-label-to-value="true" postfix=" m" min="-10" max="10" value="4.02" />
+                            <K2UI.K2ProgressBar name="CenterBar" centered="true" label="Centered Progress bar : " set-label-to-value="true" postfix=" m" min="-10" max="10" value="4.02" style="height: 28px;" />
+                            <K2UI.K2Slider name="Slider2" label-on-top="true" max="360" min-max-label="x" print-value="true" label="Min Max Shown" />
                         </ui:Foldout>
                         <ui:Foldout text="Graph" value="false">
                             <K2UI.K2Slider name="tuning" label="Tuning..." min="1" value="1" max="10" />
@@ -35,6 +35,10 @@
                                 <K2UI.Graph.GraphLine test-seed="0.53" line-width="2.53" max-y="1" max-x="100" line-color="#007D7CFF" name="line_1" min-y="0" />
                                 <K2UI.Graph.GraphLine test-seed="1.4" line-width="2.83" max-y="1" max-x="100" name="line_2" min-y="0" />
                             </ui:VisualElement>
+                        </ui:Foldout>
+                        <ui:Foldout text="Labels" value="true">
+                            <K2UI.Console tabindex="-1" text="Console &#10;&#10;On several line&#10;&lt;b&gt;Bold Line&lt;/b&gt;" />
+                            <K2UI.StatusLine tabindex="-1" text="Status" level="Warning" style="-unity-font: url(&apos;project://database/Assets/Runtime/K2UI/Runtime/Controls/USS/Fonts/arlrdbd.ttf?fileID=12800000&amp;guid=2409c98e2c1fbe54e88d40f396941a4d&amp;type=3#arlrdbd&apos;);" />
                         </ui:Foldout>
                     </K2UI.ExFoldoutGroup>
                     <K2UI.ToggleButton name="StartPilot" label="Start Pilot" class="big" />
