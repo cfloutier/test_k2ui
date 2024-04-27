@@ -20,7 +20,7 @@ namespace K2D2.UI.Tests
     {
         public Setting<bool> bool_item = new Setting<bool>("my_settings.bool_item", true);
         public ClampSetting<float> float_item = new ClampSetting<float>("my_settings.float_item", 5, 0, 100);
-        public ClampSetting<int> int_item = new ClampSetting<int>("my_settings.int_item", -5, -10, 10);
+        public ClampSettingInt int_item = new ClampSettingInt("my_settings.int_item", -5, -10, 10);
 
         public EnumSetting<MyEnum> enum_item = new EnumSetting<MyEnum>("my_settings.enum_item", MyEnum.Center);
     }
@@ -49,7 +49,6 @@ namespace K2D2.UI.Tests
             panel.Q<IntegerField>("int_field").Bind(settings.int_item);
 
             panel.Q<InlineEnum>("enum").Bind(settings.enum_item);
-
             panel.Q<Button>("reset").RegisterCallback<ClickEvent>(evt => SettingsFile.Instance.Reset());     
         }
     }
