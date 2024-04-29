@@ -62,7 +62,7 @@ public class TestGraph : MonoBehaviour
     VisualElement el_graph;
     K2Slider speed_slider, period_slider, dt_slider;
 
-    List<GraphLine> lines = new();
+    List<K2GraphLine> lines = new();
 
     public void OnEnable()
     {
@@ -72,7 +72,7 @@ public class TestGraph : MonoBehaviour
 
         for (int i = 0 ; i < nb_lines ; i++)
         {
-            var line =  new GraphLine();
+            var line =  new K2GraphLine();
             var color = color_lines;
             color.a = Mathf.Lerp(1, 0.05f, ((float)i)/nb_lines );
             line.LineColor = color;

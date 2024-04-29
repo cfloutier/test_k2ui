@@ -11,8 +11,8 @@ using System.Collections.Generic;
 [RequireComponent(typeof(UIDocument))]
 public class TestCompas : MonoBehaviour
 {
-    K2Compass el_compas_int;
-    K2Compass el_compas_noint;
+    K2Compas el_compas_int;
+    K2Compas el_compas_noint;
     Label el_Label;
 
     public void OnEnable()
@@ -20,8 +20,8 @@ public class TestCompas : MonoBehaviour
         var doc = GetComponent<UIDocument>();
         var root = doc.rootVisualElement;
         // root.AddToClassList("compas");
-        el_compas_int = root.Q<K2Compass>("interactive");
-        el_compas_noint = root.Q<K2Compass>("non_interactive");
+        el_compas_int = root.Q<K2Compas>("interactive");
+        el_compas_noint = root.Q<K2Compas>("non_interactive");
 
         el_Label = root.Q<Label>("Label-Value");
 

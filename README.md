@@ -1,6 +1,5 @@
 # Test K2UI
 
-
 test K2UI controls
 
 1. : create the mod with the @munix template builder 
@@ -15,9 +14,5 @@ and add the line in the modules definition
 ```
 
 Open the Unity Project : `src/yourMod.Unity/yourMod.Unity` 
-
-
-
-
 
 Open the packageManager. Add the git pacvkage : `https://github.com/JamesNK/Newtonsoft.Json.git`

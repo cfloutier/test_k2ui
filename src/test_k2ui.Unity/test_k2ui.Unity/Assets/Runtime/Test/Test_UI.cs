@@ -14,21 +14,24 @@ namespace K2D2.UI.Tests
     {
         public TimerPanel()
         {
+            // this code is used to find the TapPage in the Xml tree
             code = "timer";
         }
-
 
         Label my_label;
 
         public override bool onInit()
         {
+            // find the element in the tree
             my_label = panel.Q<Label>("timer_label");     
             return true;
         }
 
         public override bool onUpdateUI()
         {
+            // called on each frame when the UI is visible 
             if (!base.onUpdateUI())
+                // the base class return false if the UI is hidden
                 return false;
 
             Debug.Log("calling update");
@@ -47,7 +50,7 @@ namespace K2D2.UI.Tests
 
         public override bool onInit()
         {
-            var parent_tabs = panel.GetFirstAncestorOfType<TabbedPage>();
+            var parent_tabs = panel.GetFirstAncestorOfType<K2TabsView>();
 
             var toogle = panel.Q<K2Toggle>("controls");     
             toogle.RegisterCallback<ChangeEvent<bool>>( evt => parent_tabs.Enable("controls", !evt.newValue));
@@ -87,7 +90,7 @@ namespace K2D2.UI.Tests
     //Inherits from class `MonoBehaviour`. This makes it attachable to a game object as a component.
     public class Test_UI : MonoBehaviour
     {
-        private TabbedPage pages_controler;
+        private K2TabsView pages_controler;
 
         public string start_selected = "controls";
 
@@ -117,7 +120,7 @@ namespace K2D2.UI.Tests
             var settings_toggle = root.Q<ToggleButton>("settings-toggle");
             settings_toggle.Bind(GlobalSetting.settings_visible);
 
-            pages_controler = root.Q<TabbedPage>();
+            pages_controler = root.Q<K2TabsView>();
             pages_controler.Init(panels);
             pages_controler.Select(start_selected);
         }

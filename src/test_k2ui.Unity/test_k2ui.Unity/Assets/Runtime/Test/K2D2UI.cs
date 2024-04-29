@@ -11,7 +11,7 @@ namespace K2D2.UI.Tests
 {
     public class Test_K2D2UI : MonoBehaviour
     {
-        private TabbedPage pages_controler;
+        private K2TabsView pages_controler;
 
         public string start_selected = "controls";
 
@@ -36,7 +36,7 @@ namespace K2D2.UI.Tests
             var settings_toggle = root.Q<ToggleButton>("settings-toggle");
             settings_toggle.Bind(GlobalSetting.settings_visible);
 
-            pages_controler = root.Q<TabbedPage>();
+            pages_controler = root.Q<K2TabsView>();
             pages_controler.Init(panels);
             pages_controler.Select(start_selected);
         }

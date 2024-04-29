@@ -326,7 +326,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1078856127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,7 +344,6 @@ MonoBehaviour:
   color_atm: {r: 1, g: 1, b: 1, a: 1}
   high_density_h: 50
   low_density_h: 90
-  maxAltitude: 100
 --- !u!114 &1078856129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,7 +392,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1892314832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,7 +440,7 @@ MonoBehaviour:
   period: 0.02
   dt: 0.01
   color_lines: {r: 1, g: 1, b: 1, a: 1}
-  nb_lines: 10
+  nb_lines: 30
 --- !u!1 &1916601339
 GameObject:
   m_ObjectHideFlags: 0

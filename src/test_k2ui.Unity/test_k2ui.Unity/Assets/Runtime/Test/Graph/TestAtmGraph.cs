@@ -22,7 +22,7 @@ public class TestAtmGraph : MonoBehaviour
 
     K2Slider high_slider, low_slider;
 
-    List<GraphLine> lines = new();
+    List<K2GraphLine> lines = new();
 
     VisualElement gradient;
 

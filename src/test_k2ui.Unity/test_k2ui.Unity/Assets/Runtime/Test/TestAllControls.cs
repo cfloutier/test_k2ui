@@ -18,7 +18,7 @@ namespace K2D2.UI.Tests
         K2ProgressBar bar;
         K2Slider slider;
 
-        K2Compass compas;
+        K2Compas compas;
 
         FloatField float_field;
 
@@ -43,7 +43,7 @@ namespace K2D2.UI.Tests
                 UpdateBars();
             });
 
-            compas = panel.Q<K2Compass>();
+            compas = panel.Q<K2Compas>();
             compas.RegisterCallback<ChangeEvent<float>>((evt) =>
             {
                 my_value = evt.newValue;
@@ -57,12 +57,12 @@ namespace K2D2.UI.Tests
                 UpdateBars();
             });
 
-            int_field = panel.Q<IntegerField>();
-            int_field.RegisterCallback<ChangeEvent<int>>((evt) =>
-            {
-                my_value = evt.newValue;
-                UpdateBars();
-            });
+            // int_field = panel.Q<IntegerField>();
+            // int_field.RegisterCallback<ChangeEvent<int>>((evt) =>
+            // {
+            //     my_value = evt.newValue;
+            //     UpdateBars();
+            // });
 
 
             tuning = panel.Q<K2Slider>("tuning");
@@ -71,8 +71,8 @@ namespace K2D2.UI.Tests
                 UpdateLines();
             });
 
-            line_1 = panel.Q<GraphLine>("line_1");
-            line_2 = panel.Q<GraphLine>("line_2");
+            line_1 = panel.Q<K2GraphLine>("line_1");
+            line_2 = panel.Q<K2GraphLine>("line_2");
 
             UpdateLines();
 
@@ -84,7 +84,7 @@ namespace K2D2.UI.Tests
         }
 
         K2Slider tuning;
-        GraphLine line_1, line_2;
+        K2GraphLine line_1, line_2;
 
         void UpdateLines()
         {
@@ -98,9 +98,8 @@ namespace K2D2.UI.Tests
             slider.value = my_value;
             compas.value = my_value;
             float_field.value = my_value;
-            int_field.value = (int)my_value;
+            // do not bind the compass with an int value
+            // int_field.value = (int)my_value;
         }
-
-
     }
 }
