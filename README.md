@@ -1,21 +1,17 @@
 # Test K2UI
 
-test K2UI controls
+This project is mainly used as a set of examples on how to use the K2UI set of Controls.
 
-1. : create the mod with the @munix template builder 
-2. : add K2UI as a sub module in the `src/yourMod.Unity/yourMod.Unity/Assets/Runtime` folder
-3. : the K2UI needs Newtonsoft.Json, it is included in Kerbal Main Game But should be added in your Unity Project
+https://github.com/cfloutier/k2ui
 
-* for building the Mod :
+The full documentation is here 
 
-edit : `src/test_k2ui.Unity/test_k2ui.Unity/Packages/manifest.json`
+The K2Ui are the controls used in the the K2D2 mod for Kerbal Space Program 2
+* https://spacedock.info/mod/3325/K2-D2
+* https://github.com/cfloutier/k2d2
 
-and add the line in the modules definition
-```json
-    "com.unity.nuget.newtonsoft-json": "2.0.0"
-```
+------------------
 
-* for the Unity Project
+I mainly use this repo to code the K2UI Controls before adding it to K2D2 mod.
 
-Open the Unity Project : `src/yourMod.Unity/yourMod.Unity` 
-Open the packageManager. Add the git pacvkage : `https://github.com/JamesNK/Newtonsoft.Json.git`
+
